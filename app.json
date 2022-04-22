@@ -1,0 +1,25 @@
+{
+"name": "google-bot",
+  "description": "Bot pencarian digoogle",
+  "keywords": [
+    "telegram",
+    "bot"
+  ],
+  "repository": "https://github.com/taher19999/cupido-bot/",
+  "env": {
+    "token": {
+      "description": "Bot token kamu",
+      "required": true
+    },
+    "token": {
+      "description": "Bot token kamu",
+      "required": true
+    }    
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "stack": "heroku-20"
+}
