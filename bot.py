@@ -14,7 +14,7 @@ bot = telebot.TeleBot(token)
 def start_message(message):
     bot.send_message(message.chat.id, 'Please send me your files')
 
-@bot.message_handler(content_types=['document', 'audio', 'photo', 'video'])
+@bot.message_handler(content_types=['document', 'url', 'photo', 'web'])
 def convert_to_pdf(message):
     #print(message)
     bot.send_message(message.chat.id, 'Converting...')
